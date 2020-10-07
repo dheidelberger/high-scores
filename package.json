@@ -1,0 +1,19 @@
+{
+  "name": "high-scores",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "now-build": "cp canvas_lib64/*so.1 node_modules/canvas/build/Release/",
+    "install-lib": "curl https://raw.githubusercontent.com/jwerre/node-canvas-lambda/master/canvas-lib64-layer.zip > canvas-lib64-layer.zip && unzip -j -d canvas_lib64 canvas-lib64-layer.zip"
+  },
+  "keywords": [],
+  "author": "David Heidelbegrer <david.heidelberger@gmail.com> (http://www.davidheidelberger.com)",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "canvas": "^2.6.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.11"
+  }
+}

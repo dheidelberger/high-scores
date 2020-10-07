@@ -1,0 +1,8 @@
+.now
+secrets.txt
+.env
+canvas-lib64-layer.zip
+canvas_lib64/
+.DS_Store
+node_modules
+fonts

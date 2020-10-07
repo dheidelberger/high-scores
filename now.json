@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [{ "src": "/lambdas/score.js", "use": "@now/node" }],
+  "routes": [
+    { "src": "/score/getScore", "dest": "/lambdas/score.js" },
+    { "src": "/score/updateScore", "dest": "/lambdas/score.js" },
+    { "src": "/score/drawScore", "dest": "/lambdas/score.js" },
+    { "src": "/score/", "dest": "/lambdas/score.js" },
+    {
+      "src": "/score/reset-db",
+      "dest": "/lambdas/score.js"
+    }
+  ],
+  "env": {
+    "API_KEY": "@api-key",
+    "SEED_KEY": "@seed-key",
+    "REFERRER": "@referrer",
+    "DBCONNECT": "@dbconnect",
+    "DBUSERNAME": "@dbusername",
+    "DBPASSWORD": "@dbpassword"
+  }
+}
